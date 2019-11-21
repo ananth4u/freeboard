@@ -1,0 +1,9 @@
+.disabled {
+  background: rgba(150,150,150,0.5);
+}
+
+
+
+#footer-bar {
+    display:none;
+}
