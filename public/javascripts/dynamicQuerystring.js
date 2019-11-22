@@ -11,7 +11,7 @@ setTimeout(function(){
 	});	
 	$('button#Authsubmit').click(function(e){
 		window.setThing($("#accessId").val());
-		freeboard.setDatasourceSettings("TiTag", {"headers.value":window.targetThing});
+		freeboard.setDatasourceSettings();
 	    	$("#accessId").prop('disabled', true);
 	    	$('button#Authsubmit').prop("disabled",true);
 	
@@ -20,6 +20,6 @@ setTimeout(function(){
 },3000);
 
 
-window.setThing = function(Value) {
-	window.targetThing = "Bearer "+Value;
+window.setThing = function(url) {
+	window.targetThing = "http://35.232.36.172/api/iotone/data/get?deviceId="+url;
 }
