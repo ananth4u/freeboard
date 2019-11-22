@@ -21,7 +21,7 @@ setTimeout(function(){
 
 
 window.setThing = function(url) {
-	window.targetThing = "http://35.232.36.172/api/iotone/data/get?deviceId="+url;
+	window.targetThing = "https://iotone.virtusa.com/api/iotone/data/get?deviceId="+url;
 }
 
 window.setThing1 = function(value) {
