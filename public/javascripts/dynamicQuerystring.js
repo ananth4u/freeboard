@@ -11,7 +11,7 @@ setTimeout(function(){
 	});	
 	$('button#Authsubmit').click(function(e){
 		window.setThing($("#accessId").val());
-		freeboard.setDatasourceSettings("TiTag", {"Value":window.targetThing});
+		freeboard.setDatasourceSettings("TiTag", {"headers.value":window.targetThing});
 	    	$("#accessId").prop('disabled', true);
 	    	$('button#Authsubmit').prop("disabled",true);
 	
